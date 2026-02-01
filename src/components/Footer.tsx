@@ -159,10 +159,10 @@ export const Footer = () => {
               />
               <Button
                 type="submit"
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+                className="w-full bg-primary hover:bg-primary/90 text-white font-semibold flex items-center justify-center gap-2"
               >
-                <Send className="mr-2 w-4 h-4" />
-                Subscribe
+                <Send className="w-4 h-4" />
+                <span>Subscribe</span>
               </Button>
             </form>
           </motion.div>

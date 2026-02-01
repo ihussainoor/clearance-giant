@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, ExternalLink } from "lucide-react";
+import { Menu, X, Phone, ExternalLink, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { getAssetUrl } from "@/lib/assetUrl";
 
 const navLinks = [
+  { href: "/", label: "Home", external: false, icon: Home },
   { href: "/about-us", label: "About Us", external: false },
   { href: "/sell-to-us", label: "Sell to Us", external: false },
   { href: "/buy-from-us", label: "Buy From Us", external: false },
@@ -17,7 +18,14 @@ export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
+  // Scroll to top when route changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  // Handle scroll event
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
