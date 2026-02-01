@@ -32,20 +32,20 @@ export const HeroForm = () => {
 
   return (
     <motion.div
-      className="bg-white rounded-2xl p-6 lg:p-8 shadow-2xl"
+      className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-2xl"
       whileHover={{ scale: 1.01 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="text-center mb-6">
-        <h3 className="font-display text-2xl font-bold text-navy mb-2">
+      <div className="text-center mb-4 sm:mb-6">
+        <h3 className="font-display text-xl sm:text-2xl font-bold text-navy mb-1 sm:mb-2">
           Get Your Free Quote
         </h3>
-        <p className="text-muted-foreground">
+        <p className="text-muted-foreground text-sm sm:text-base">
           Quick response within 24 hours
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
         <div>
           <Input
             type="text"
@@ -53,7 +53,7 @@ export const HeroForm = () => {
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             required
-            className="h-12 bg-muted/50 border-0 focus-visible:ring-2 focus-visible:ring-secondary"
+            className="h-11 sm:h-12 bg-muted/50 border-0 focus-visible:ring-2 focus-visible:ring-secondary text-sm sm:text-base"
           />
         </div>
 
@@ -64,33 +64,33 @@ export const HeroForm = () => {
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             required
-            className="h-12 bg-muted/50 border-0 focus-visible:ring-2 focus-visible:ring-secondary"
+            className="h-11 sm:h-12 bg-muted/50 border-0 focus-visible:ring-2 focus-visible:ring-secondary text-sm sm:text-base"
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-2 sm:gap-3">
           <button
             type="button"
             onClick={() => setFormData({ ...formData, type: "sell" })}
-            className={`p-4 rounded-xl border-2 transition-all ${
+            className={`p-3 sm:p-4 rounded-lg sm:rounded-xl border-2 transition-all text-sm sm:text-base font-medium ${
               formData.type === "sell"
                 ? "border-primary bg-primary/10 text-primary"
                 : "border-border bg-muted/30 text-muted-foreground hover:border-primary/50"
             }`}
           >
-            <div className="font-semibold">I want to Sell</div>
+            <div className="font-semibold text-xs sm:text-sm">I want to Sell</div>
             <div className="text-xs opacity-70">Clear excess stock</div>
           </button>
           <button
             type="button"
             onClick={() => setFormData({ ...formData, type: "buy" })}
-            className={`p-4 rounded-xl border-2 transition-all ${
+            className={`p-3 sm:p-4 rounded-lg sm:rounded-xl border-2 transition-all text-sm sm:text-base font-medium ${
               formData.type === "buy"
                 ? "border-secondary bg-secondary/10 text-secondary"
                 : "border-border bg-muted/30 text-muted-foreground hover:border-secondary/50"
             }`}
           >
-            <div className="font-semibold">I want to Buy</div>
+            <div className="font-semibold text-xs sm:text-sm">I want to Buy</div>
             <div className="text-xs opacity-70">Find great deals</div>
           </button>
         </div>
@@ -98,20 +98,20 @@ export const HeroForm = () => {
         <Button
           type="submit"
           disabled={isLoading}
-          className="w-full h-14 bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg group"
+          className="w-full h-11 sm:h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-sm sm:text-base group"
         >
           {isLoading ? (
-            <Loader2 className="w-5 h-5 animate-spin" />
+            <Loader2 className="w-4 sm:w-5 h-4 sm:h-5 animate-spin" />
           ) : (
             <>
               Get Free Quote
-              <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <Send className="ml-2 w-4 sm:w-5 h-4 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </>
           )}
         </Button>
       </form>
 
-      <p className="text-center text-xs text-muted-foreground mt-4">
+      <p className="text-center text-xs text-muted-foreground mt-3 sm:mt-4">
         🔒 Your information is secure and never shared
       </p>
     </motion.div>

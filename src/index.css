@@ -188,4 +188,36 @@
   .animate-pulse-slow {
     animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
+
+  /* Mobile optimization for fold/responsive screens */
+  @media (max-width: 640px) {
+    .container-section {
+      @apply px-3 sm:px-4;
+    }
+
+    h1 {
+      @apply text-2xl sm:text-3xl;
+    }
+
+    h2 {
+      @apply text-xl sm:text-2xl;
+    }
+
+    .section-padding {
+      @apply py-8 sm:py-12;
+    }
+  }
+
+  /* Foldable device support */
+  @media (screen-spanning: single-fold-vertical) {
+    .container-section {
+      @apply max-w-none;
+    }
+  }
+
+  @media (screen-spanning: single-fold-horizontal) {
+    .container-section {
+      @apply max-w-none;
+    }
+  }
 }
