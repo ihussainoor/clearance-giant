@@ -38,12 +38,7 @@ export const Header = () => {
       <div className="container-section flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-display font-bold text-xl">CG</span>
-          </div>
-          <span className="font-display font-bold text-xl text-white hidden sm:block">
-            Clearance Giant
-          </span>
+          <img src="/logo.webp" alt="Clearance Giant" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}

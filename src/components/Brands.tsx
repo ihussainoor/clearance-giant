@@ -1,9 +1,18 @@
 import { motion } from "framer-motion";
 
 const brands = [
-  "Adidas", "Nike", "Puma", "Samsung", "Sony", "LG", 
-  "Philips", "JBL", "Reebok", "Under Armour", "Asics", "New Balance",
-  "Bosch", "Makita", "DeWalt", "Stanley", "Karcher", "Dyson"
+  "Nike", "Adidas", "Puma", "Reebok",
+  "Samsung", "Sony", "LG", "Philips",
+  "Apple", "Canon", "Nikon", "GoPro",
+  "IKEA", "Dunelm", "Next", "Argos",
+  "Dyson", "Shark", "Bissell", "Karcher",
+  "Bosch", "DeWalt", "Makita", "Stanley",
+  "Nespresso", "DeLonghi", "Philips", "Kenwood",
+  "Under Armour", "New Balance", "Asics", "Saucony",
+  "Lego", "Hasbro", "Mattel", "Ravensburger",
+  "Gillette", "Nivea", "Loreal", "Pantene",
+  "Nestlé", "Unilever", "P&G", "Colgate",
+  "Calor", "Russell Hobbs", "Breville", "Sage"
 ];
 
 export const Brands = () => {

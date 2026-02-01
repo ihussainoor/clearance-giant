@@ -59,8 +59,10 @@ const BuyFromUs = () => {
     company: "",
     email: "",
     phone: "",
-    interests: "",
-    budget: "",
+    productDetails: "",
+    productPhoto: "",
+    productCategory: "",
+    productType: "",
     message: "",
   });
   const { toast } = useToast();
@@ -81,8 +83,10 @@ const BuyFromUs = () => {
       company: "",
       email: "",
       phone: "",
-      interests: "",
-      budget: "",
+      productDetails: "",
+      productPhoto: "",
+      productCategory: "",
+      productType: "",
       message: "",
     });
     setIsLoading(false);
@@ -269,16 +273,37 @@ const BuyFromUs = () => {
               <div className="grid sm:grid-cols-2 gap-4">
                 <Input
                   type="text"
-                  placeholder="Categories of Interest"
-                  value={formData.interests}
-                  onChange={(e) => setFormData({ ...formData, interests: e.target.value })}
+                  placeholder="Product Details *"
+                  value={formData.productDetails}
+                  onChange={(e) => setFormData({ ...formData, productDetails: e.target.value })}
+                  required
                   className="h-12 bg-white/10 border-white/20 text-white placeholder:text-white/50"
                 />
                 <Input
                   type="text"
-                  placeholder="Typical Order Budget"
-                  value={formData.budget}
-                  onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
+                  placeholder="Product Photo Feed *"
+                  value={formData.productPhoto}
+                  onChange={(e) => setFormData({ ...formData, productPhoto: e.target.value })}
+                  required
+                  className="h-12 bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                />
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Input
+                  type="text"
+                  placeholder="Select Product Category *"
+                  value={formData.productCategory}
+                  onChange={(e) => setFormData({ ...formData, productCategory: e.target.value })}
+                  required
+                  className="h-12 bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                />
+                <Input
+                  type="text"
+                  placeholder="Select Type *"
+                  value={formData.productType}
+                  onChange={(e) => setFormData({ ...formData, productType: e.target.value })}
+                  required
                   className="h-12 bg-white/10 border-white/20 text-white placeholder:text-white/50"
                 />
               </div>

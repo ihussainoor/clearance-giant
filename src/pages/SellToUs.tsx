@@ -59,8 +59,11 @@ const SellToUs = () => {
     company: "",
     email: "",
     phone: "",
-    stockType: "",
-    quantity: "",
+    productDetails: "",
+    productPhoto: "",
+    condition: "",
+    location: "",
+    volume: "",
     message: "",
   });
   const { toast } = useToast();
@@ -81,8 +84,11 @@ const SellToUs = () => {
       company: "",
       email: "",
       phone: "",
-      stockType: "",
-      quantity: "",
+      productDetails: "",
+      productPhoto: "",
+      condition: "",
+      location: "",
+      volume: "",
       message: "",
     });
     setIsLoading(false);
@@ -269,19 +275,49 @@ const SellToUs = () => {
               <div className="grid sm:grid-cols-2 gap-4">
                 <Input
                   type="text"
-                  placeholder="Stock Type (e.g., Returns, Overstock)"
-                  value={formData.stockType}
-                  onChange={(e) => setFormData({ ...formData, stockType: e.target.value })}
+                  placeholder="Product Details *"
+                  value={formData.productDetails}
+                  onChange={(e) => setFormData({ ...formData, productDetails: e.target.value })}
+                  required
                   className="h-12 bg-white/10 border-white/20 text-white placeholder:text-white/50"
                 />
                 <Input
                   type="text"
-                  placeholder="Estimated Quantity/Value"
-                  value={formData.quantity}
-                  onChange={(e) => setFormData({ ...formData, quantity: e.target.value })}
+                  placeholder="Product Photo Feed *"
+                  value={formData.productPhoto}
+                  onChange={(e) => setFormData({ ...formData, productPhoto: e.target.value })}
+                  required
                   className="h-12 bg-white/10 border-white/20 text-white placeholder:text-white/50"
                 />
               </div>
+
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Input
+                  type="text"
+                  placeholder="Select Condition *"
+                  value={formData.condition}
+                  onChange={(e) => setFormData({ ...formData, condition: e.target.value })}
+                  required
+                  className="h-12 bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                />
+                <Input
+                  type="text"
+                  placeholder="Location *"
+                  value={formData.location}
+                  onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+                  required
+                  className="h-12 bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                />
+              </div>
+
+              <Input
+                type="text"
+                placeholder="Volume *"
+                value={formData.volume}
+                onChange={(e) => setFormData({ ...formData, volume: e.target.value })}
+                required
+                className="h-12 bg-white/10 border-white/20 text-white placeholder:text-white/50"
+              />
 
               <Textarea
                 placeholder="Tell us more about your stock (categories, brands, condition, etc.)"

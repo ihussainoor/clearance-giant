@@ -59,12 +59,7 @@ export const Footer = () => {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-display font-bold text-xl">CG</span>
-              </div>
-              <span className="font-display font-bold text-xl text-white">
-                Clearance Giant
-              </span>
+              <img src="/logo.webp" alt="Clearance Giant" className="h-10 w-auto" />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
               The UK's leading wholesale clearance marketplace. 
