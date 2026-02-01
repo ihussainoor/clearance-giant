@@ -4,6 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/clearance-giant/",
   server: {
     host: "::",
     port: 8080,
