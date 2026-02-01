@@ -12,6 +12,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import { getAssetUrl } from "@/lib/assetUrl";
 
 const TikTokIcon = () => (
   <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
@@ -59,7 +60,7 @@ export const Footer = () => {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-2 mb-4">
-              <img src="/logo.webp" alt="Clearance Giant" className="h-10 w-auto" />
+              <img src={getAssetUrl("logo.webp")} alt="Clearance Giant" className="h-10 w-auto" />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
               The UK's leading wholesale clearance marketplace. 

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
+import { getAssetUrl } from "@/lib/assetUrl";
 
 const navLinks = [
   { href: "/about-us", label: "About Us", external: false },
@@ -38,7 +39,7 @@ export const Header = () => {
       <div className="container-section flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <img src="/logo.webp" alt="Clearance Giant" className="h-10 w-auto" />
+          <img src={getAssetUrl("logo.webp")} alt="Clearance Giant" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
