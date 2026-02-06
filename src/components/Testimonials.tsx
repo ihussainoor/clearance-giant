@@ -4,32 +4,25 @@ import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "James Richardson",
-    role: "Retail Business Owner",
-    avatar: "JR",
+    name: "Babar Muhammad",
+    role: "Business Owner",
+    avatar: "BM",
     rating: 5,
-    quote: "Clearance Giant helped us clear £50,000 worth of excess inventory in just one week. The process was seamless and we got a fair price. Highly recommend!",
+    quote: "I cannot praise Clearance Giant enough for their exceptional service! Entered Clearance Giant, and within a couple of days, my items were sold, and I couldn't be happier with the outcome.",
   },
   {
-    name: "Sarah Mitchell",
+    name: "Hussain Pathan",
     role: "Wholesale Buyer",
-    avatar: "SM",
+    avatar: "HP",
     rating: 5,
-    quote: "We've been buying from Clearance Giant for 2 years now. The quality of branded products at these prices has significantly boosted our margins.",
+    quote: "These guys have no doubt got the best prices in the UK. I would say when you need to purchase or sell anything in bulk look no further and hit them up. The deals are absolutely transparent and responsive.",
   },
   {
-    name: "David Chen",
-    role: "E-commerce Store Owner",
-    avatar: "DC",
+    name: "Paul Dunbavin",
+    role: "Business Manager",
+    avatar: "PD",
     rating: 5,
-    quote: "Fast, professional, and reliable. They collected our overstock within days and paid promptly. Will definitely use them again.",
-  },
-  {
-    name: "Emma Thompson",
-    role: "Distribution Manager",
-    avatar: "ET",
-    rating: 5,
-    quote: "The team at Clearance Giant are true professionals. They understand the wholesale market and always offer competitive rates.",
+    quote: "Great company to deal with, I was given a fast and professional approach to my enquiry. Very impressed with the deal we arranged. Will use Clearance Giant again and would recommend.",
   },
 ];
 
