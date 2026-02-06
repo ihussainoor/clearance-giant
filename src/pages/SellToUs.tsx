@@ -119,7 +119,7 @@ const SellToUs = () => {
             </h1>
             <p className="text-xl text-white/70 mb-8">
               Turn your surplus inventory into cash. Get competitive offers for customer returns, 
-              end-of-line products, and excess stock from the UK's leading clearance buyer.
+              end-of-line products, and excess stock from the UK & Europe's leading clearance buyer.
             </p>
             <Button
               size="lg"

@@ -50,7 +50,7 @@ export const Hero = () => {
               className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-4 sm:mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-primary text-xs sm:text-sm font-medium">UK's #1 Wholesale Clearance Marketplace</span>
+              <span className="text-primary text-xs sm:text-sm font-medium">UK & Europe's #1 Wholesale Clearance Marketplace</span>
             </motion.div>
 
             <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6">
@@ -62,7 +62,7 @@ export const Hero = () => {
             </h1>
 
             <p className="text-base sm:text-lg text-white/70 mb-6 sm:mb-8 max-w-xl">
-              Join the UK's largest B2B clearance network. Whether you're clearing warehouse space 
+              Join the UK & Europe's largest B2B clearance network. Whether you're clearing warehouse space 
               or sourcing quality branded goods at 30-70% below retail, we've got you covered.
             </p>
 

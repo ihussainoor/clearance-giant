@@ -29,7 +29,7 @@ const buySteps = [
   {
     icon: Search,
     title: "Browse Inventory",
-    description: "Explore our wide range of branded clearance stock updated weekly.",
+    description: "Explore our wide range of branded clearance stock updated daily.",
   },
   {
     icon: Tag,

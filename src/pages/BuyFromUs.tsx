@@ -36,8 +36,8 @@ const benefits = [
   },
   {
     icon: Truck,
-    title: "UK Delivery",
-    description: "Fast and reliable delivery to anywhere in the UK with tracking included."
+    title: "UK & Europe Delivery",
+    description: "Fast and reliable delivery to anywhere in the UK and Europe with tracking included."
   }
 ];
 

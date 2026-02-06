@@ -8,7 +8,7 @@ const values = [
   {
     icon: Users,
     title: "Customer First",
-    description: "We prioritize building long-term relationships with our suppliers and buyers, ensuring mutual success."
+    description: "We prioritise building long-term relationships with our suppliers and buyers, ensuring mutual success."
   },
   {
     icon: Award,
@@ -17,18 +17,18 @@ const values = [
   },
   {
     icon: Globe,
-    title: "Global Reach",
-    description: "Our network spans across the UK and internationally, connecting businesses worldwide."
+    title: "UK & Europe Reach",
+    description: "Our network spans across the UK and Europe, connecting businesses and maximising opportunities."
   },
   {
     icon: Target,
     title: "Fair Pricing",
-    description: "We ensure fair deals for both sellers and buyers, maximizing value for everyone involved."
+    description: "We ensure fair deals for both sellers and buyers, maximising value for everyone involved."
   }
 ];
 
 const milestones = [
-  "5,500+ satisfied clients across the UK",
+  "5,500+ satisfied clients across UK & Europe",
   "£700K+ worth of stock traded",
   "100% authentic branded products",
   "Same-day quote turnaround",
@@ -61,8 +61,8 @@ const AboutUs = () => {
               About <span className="text-gradient">Clearance Giant</span>
             </h1>
             <p className="text-xl text-white/70">
-              The UK's leading B2B wholesale clearance marketplace, connecting businesses 
-              to maximize value from excess stock and source premium branded goods.
+              The UK & Europe's leading B2B wholesale clearance marketplace, connecting businesses 
+              to maximise value from excess stock and source premium branded goods.
             </p>
           </motion.div>
         </div>
@@ -87,8 +87,8 @@ const AboutUs = () => {
                   at competitive prices.
                 </p>
                 <p>
-                  What started as a small operation has grown into the UK's largest B2B 
-                  clearance network, serving over 5,500 suppliers and buyers. We specialize 
+                  What started as a small operation has grown into the UK & Europe's largest B2B 
+                  clearance network, serving over 5,500 suppliers and buyers. We specialise 
                   in handling excess stock, customer returns, and end-of-line products from 
                   major retailers and brands.
                 </p>
@@ -212,7 +212,7 @@ const AboutUs = () => {
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
                 <div className="text-center p-8">
                   <div className="font-display text-6xl font-bold text-white mb-4">#1</div>
-                  <div className="text-white/80 text-xl">UK's Largest B2B<br />Clearance Network</div>
+                  <div className="text-white/80 text-xl">UK & Europe's Largest B2B<br />Clearance Network</div>
                 </div>
               </div>
             </motion.div>

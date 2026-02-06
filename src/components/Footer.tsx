@@ -63,7 +63,7 @@ export const Footer = () => {
               <img src={getAssetUrl("logo.webp")} alt="Clearance Giant" className="h-10 w-auto" />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              The UK's leading wholesale clearance marketplace. 
+              The UK & Europe's leading wholesale clearance marketplace. 
               Connecting businesses that need to move stock with 
               those looking for quality branded products at great prices.
             </p>
